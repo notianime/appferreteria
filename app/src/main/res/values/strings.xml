@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Latino Pre Policial</string>
+    <string name="item1">INGRESAR</string>
+    <string name="item2">REGISTRAR</string>
+    <string name="item3">SALIR</string>
+    <string name="Login">LOGIN</string>
+    <string name="BotonIngresar">INGRESAR</string>
+    <string name="txt_Nombre">Nombre de Usuario</string>
+    <string name="txt_Contrasenia">Contraseña</string>
 </resources>
