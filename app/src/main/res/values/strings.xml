@@ -3,6 +3,7 @@
     //MENU
     <string name="item1">INGRESAR</string>
     <string name="item2">REGISTRAR</string>
+    <string name="item4">JUGAR</string>
     <string name="item3">SALIR</string>
 
     //LOGIN
@@ -21,4 +22,10 @@
     <string name="mainMaz17i">PNP Mazamari 2018 I</string>
     <string name="mainEO18">Escuela de Oficiales 2018</string>
     <string name="pdf">PDF</string>
+
+    //ListaDeEstudiantes
+    <string name="titlels">Lista de Estudiantes</string>
+    <string name="details">Seleccione un nombre...</string>
+    <string name="next">DETALLES</string>
+
 </resources>

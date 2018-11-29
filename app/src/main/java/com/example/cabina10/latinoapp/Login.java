@@ -16,6 +16,10 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        //Icono en el Action Bar
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+
         etn = (EditText)findViewById(R.id.txt_Nombre);
         etp = (EditText)findViewById(R.id.txt_Contrasenia);
 
@@ -42,7 +46,7 @@ public class Login extends AppCompatActivity {
         if (!nombre.equals("")){
             Toast.makeText(this, "Hola " + nombre, Toast.LENGTH_SHORT).show();
             Intent siguiente = new Intent(this, StudentsList.class);
-            siguiente.putExtra("jugador", nombre);
+            siguiente.putExtra("Estudiante", nombre);
             startActivity(siguiente);
             finish();
         }
