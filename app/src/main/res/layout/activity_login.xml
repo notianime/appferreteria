@@ -8,12 +8,12 @@
 
     <EditText
         android:id="@+id/txt_Nombre"
-        android:layout_width="242dp"
+        android:layout_width="240dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="148dp"
         android:ems="10"
         android:hint="@string/txt_Nombre"
         android:inputType="textPersonName"
@@ -23,10 +23,9 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851" />
 
     <Button
         android:id="@+id/button"
@@ -34,36 +33,24 @@
         android:layout_height="59dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/difuminado"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/primary90curva"
         android:onClick="Ingresar"
         android:text="@string/BotonIngresar"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="8dp"
-        android:contentDescription="@string/ImgLogin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/login" />
 
     <EditText
         android:id="@+id/txt_Contrasenia"
-        android:layout_width="237dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/txt_Contrasenia"
         android:inputType="textPassword"
@@ -71,6 +58,21 @@
         android:textColor="@color/ic_launcher_background"
         android:textColorHint="@color/colorPrimaryDark"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Nombre" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="303dp"
+        android:layout_height="273dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/ImgLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logolatino" />
+
 </android.support.constraint.ConstraintLayout>
