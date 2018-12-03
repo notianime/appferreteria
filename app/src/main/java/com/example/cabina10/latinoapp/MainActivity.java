@@ -13,6 +13,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.cabina10.latinoapp.adapters.DocumentAdapter;
 import com.example.cabina10.latinoapp.models.Document;
 
 import java.util.ArrayList;
@@ -31,8 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
         tvmain = (ListView) findViewById(R.id.tvmain);
         ArrayList<Document> items = Document.getDocuments();
-        ArrayAdapter<Document> adapter = new ArrayAdapter<Document>(this, R.layout.list_item_document, items);
-        tvmain.setAdapter(adapter);
+        DocumentAdapter documentAdapter = new DocumentAdapter(this, R.id.tvmain, items);
+        //ArrayAdapter<Document> adapter = new ArrayAdapter<Document>(this, R.layout.list_item_document, items);
+        tvmain.setAdapter(documentAdapter);
 
         tvmain.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
