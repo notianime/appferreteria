@@ -6,10 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-
 import com.example.cabina10.latinoapp.R;
 import com.example.cabina10.latinoapp.models.Document;
-
 import java.util.List;
 
 public class DocumentAdapter extends ArrayAdapter<Document> {
@@ -49,17 +47,8 @@ private class ViewHolder {
         }
 
         holder.name.setText(rowItem.getNombre());
-        //holder.price.setText(rowItem.getPriceText());
         holder.description.setText(rowItem.getDescripcion());
         holder.date.setText(rowItem.getFechaText());
-//
-//        if ( rowItem.getSmallImage() != null ) {
-//            holder.image.setImageUrl(
-//                    rowItem.getSmallImage(), queue);
-//        }
-
-
-//        holder.image.setImageBitmap(rowItem.getSmallBitMap());
         return convertView;
     }
 }

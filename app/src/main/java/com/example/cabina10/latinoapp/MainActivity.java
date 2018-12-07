@@ -13,6 +13,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.cabina10.latinoapp.activities.RegisterForm;
 import com.example.cabina10.latinoapp.adapters.DocumentAdapter;
 import com.example.cabina10.latinoapp.models.Document;
 
@@ -26,14 +27,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Icono en el Action Bar
+        //ICONO EN EL ACTION BAR
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
 
         tvmain = (ListView) findViewById(R.id.tvmain);
         ArrayList<Document> items = Document.getDocuments();
         DocumentAdapter documentAdapter = new DocumentAdapter(this, R.id.tvmain, items);
-        //ArrayAdapter<Document> adapter = new ArrayAdapter<Document>(this, R.layout.list_item_document, items);
         tvmain.setAdapter(documentAdapter);
 
         tvmain.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -44,9 +44,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(browserIntent);
             }
         });
-
-       //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item_estudiantes, nombres);
-       // lv1.setAdapter(adapter);
     }
 
     //Metodo para mostrar y ocultar Menu
@@ -59,12 +56,10 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
         if (id == R.id.item1){
-            //Toast.makeText(this, "LOGIN", Toast.LENGTH_SHORT).show();
             Intent siguiente = new Intent(this, Login.class);
             startActivity(siguiente);
         }else if (id == R.id.item2){
-            Toast.makeText(this, "Estudiantes", Toast.LENGTH_SHORT).show();
-            Intent siguiente = new Intent(this, StudentsList.class);
+            Intent siguiente = new Intent(this, RegisterForm.class);
             startActivity(siguiente);
         }else if (id == R.id.item3){
             Toast.makeText(this, "SALIR", Toast.LENGTH_SHORT).show();

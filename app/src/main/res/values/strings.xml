@@ -28,4 +28,11 @@
     <string name="details">Seleccione un nombre...</string>
     <string name="next">DETALLES</string>
 
+    //Formulario de Registro
+    <string name="titleRegisterForm">FORMULARIO DE REGISTRO</string>
+    <string name="email">Ingrese su Correo Electronico:</string>
+    <string name="telefono">Ingrese su Telefono :</string>
+    <string name="usuario">Ingrese un Nombre de Usuario :</string>
+    <string name="password">Ingrese una Contraseña Segura :</string>
+    <string name="botonRegistrar">REGISTRAR</string>
 </resources>
