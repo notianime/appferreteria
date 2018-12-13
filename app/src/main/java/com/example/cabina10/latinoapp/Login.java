@@ -47,14 +47,14 @@ Login extends AppCompatActivity {
         }else
         if (!nombre.equals("") && nombre.equals("Aldair")){
             Toast.makeText(this, "Hola " + nombre, Toast.LENGTH_SHORT).show();
-            Intent siguiente = new Intent(this, StudentsList.class);
+            Intent siguiente = new Intent(this, StudentAccount.class);
             siguiente.putExtra("Estudiante", nombre);
             startActivity(siguiente);
             finish();
         }else
         if (!nombre.equals("") && nombre.equals("Carlos")){
             Toast.makeText(this, "Hola " + nombre, Toast.LENGTH_SHORT).show();
-            Intent siguiente = new Intent(this, StudentAccount.class);
+            Intent siguiente = new Intent(this, StudentsList.class);
             siguiente.putExtra("Estudiante", nombre);
             startActivity(siguiente);
             finish();

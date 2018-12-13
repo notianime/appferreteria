@@ -18,11 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login" />
-        <activity android:name=".StudentsList" />
-        <activity android:name=".StudentDetails" />
-        <activity android:name=".activities.RegisterForm" />
-        <activity android:name=".StudentAccount"></activity>
+        <activity android:name=".Login" android:screenOrientation="portrait"/>
+        <activity android:name=".StudentsList" android:screenOrientation="portrait"/>
+        <activity android:name=".StudentDetails" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.RegisterForm" android:screenOrientation="portrait"/>
+        <activity android:name=".StudentAccount" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
