@@ -3,7 +3,6 @@
     //MENU
     <string name="item1">INGRESAR</string>
     <string name="item2">REGISTRAR</string>
-    <string name="item4">JUGAR</string>
     <string name="item3">SALIR</string>
 
     //LOGIN
@@ -25,8 +24,7 @@
 
     //ListaDeEstudiantes
     <string name="titlels">Lista de Estudiantes</string>
-    <string name="details">Seleccione un nombre...</string>
-    <string name="next">DETALLES</string>
+    <string name="estudiante">Datos Personales</string>
 
     //Formulario de Registro
     <string name="titleRegisterForm">FORMULARIO DE REGISTRO</string>
@@ -35,4 +33,15 @@
     <string name="usuario">Ingrese un Nombre de Usuario :</string>
     <string name="password">Ingrese una Contraseña Segura :</string>
     <string name="botonRegistrar">REGISTRAR</string>
+
+    //MENU ESTUDIANTES
+    <string name="itemE1">DATOS PERSONALES</string>
+    <string name="itemE2">ASISTENCIA</string>
+    <string name="itemE3">SALIR</string>
+
+    //MENU ADMINISTRADOR
+    <string name="itemA1">DATOS PERSONALES</string>
+    <string name="itemA2">ESTUDIANTES</string>
+    <string name="itemA3">ASISTENCIA</string>
+    <string name="itemA4">SALIR</string>
 </resources>

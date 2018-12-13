@@ -5,10 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Login extends AppCompatActivity {
+public class
+Login extends AppCompatActivity {
 
     private EditText etn, etp;
     @Override
@@ -23,8 +25,8 @@ public class Login extends AppCompatActivity {
         etn = (EditText)findViewById(R.id.txt_Nombre);
         etp = (EditText)findViewById(R.id.txt_Contrasenia);
 
-        //AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "BD", null, 1);
-        //SQLiteDatabase BD  = admin.getWritableDatabase();
+        //Button boton = (Button) findViewById(R.id.button);
+        //boton.setEnabled(false);
     }
     //METODO PARA INICIAR SESION
     public void Ingresar(View view){
@@ -43,12 +45,23 @@ public class Login extends AppCompatActivity {
             InputMethodManager inm = (InputMethodManager)getSystemService(this.INPUT_METHOD_SERVICE);
             inm.showSoftInput(etp, InputMethodManager.SHOW_IMPLICIT);
         }else
-        if (!nombre.equals("")){
+        if (!nombre.equals("") && nombre.equals("Aldair")){
             Toast.makeText(this, "Hola " + nombre, Toast.LENGTH_SHORT).show();
             Intent siguiente = new Intent(this, StudentsList.class);
             siguiente.putExtra("Estudiante", nombre);
             startActivity(siguiente);
             finish();
+        }else
+        if (!nombre.equals("") && nombre.equals("Carlos")){
+            Toast.makeText(this, "Hola " + nombre, Toast.LENGTH_SHORT).show();
+            Intent siguiente = new Intent(this, StudentAccount.class);
+            siguiente.putExtra("Estudiante", nombre);
+            startActivity(siguiente);
+            finish();
+        }
+        else
+        if (!nombre.equals("")){
+            Toast.makeText(this, "Usuario no registrado ", Toast.LENGTH_SHORT).show();
         }
     }
 

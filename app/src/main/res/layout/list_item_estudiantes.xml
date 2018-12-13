@@ -14,9 +14,9 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            app:srcCompat="@android:drawable/ic_menu_mylocation" />
+            android:layout_width="130dp"
+            android:layout_height="170dp"
+            app:srcCompat="@drawable/estudiante" />
 
         <LinearLayout
             android:orientation="vertical"
@@ -28,7 +28,6 @@
                 android:id="@+id/dni"
                 android:layout_width="115dp"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textStyle="normal|bold" />
 
             <TextView

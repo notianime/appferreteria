@@ -21,7 +21,8 @@
         <activity android:name=".Login" />
         <activity android:name=".StudentsList" />
         <activity android:name=".StudentDetails" />
-        <activity android:name=".activities.RegisterForm"></activity>
+        <activity android:name=".activities.RegisterForm" />
+        <activity android:name=".StudentAccount"></activity>
     </application>
 
 </manifest>

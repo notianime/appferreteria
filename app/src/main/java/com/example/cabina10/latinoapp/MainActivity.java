@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             Intent siguiente = new Intent(this, RegisterForm.class);
             startActivity(siguiente);
         }else if (id == R.id.item3){
-            Toast.makeText(this, "SALIR", Toast.LENGTH_SHORT).show();
+            finish();
         }
         return super.onOptionsItemSelected(item);
     }
