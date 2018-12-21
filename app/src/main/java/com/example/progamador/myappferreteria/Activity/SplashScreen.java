@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
-import android.LoginActivity;
 import com.example.progamador.myappferreteria.R;
 
 public class SplashScreen extends AppCompatActivity {
@@ -18,7 +17,7 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen.this,LoginActivity.class);
+                Intent intent = new Intent(SplashScreen.this,ListarCategoria.class);
                 startActivity(intent);
                 finish();
             }

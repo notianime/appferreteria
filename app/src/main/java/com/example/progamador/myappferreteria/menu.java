@@ -12,6 +12,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.example.progamador.myappferreteria.Fragments.ProductkFragment;
 
 public class menu extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -83,8 +86,12 @@ public class menu extends AppCompatActivity
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+//            Toast. makeText ( this
+//            "ey has hecho click",
+//                    Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_slideshow) {
+            fragmenChange("product-list");
 
         } else if (id == R.id.nav_manage) {
 
@@ -98,4 +105,12 @@ public class menu extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+    public void fragmenChange (String _fragment ) {
+            if ( _fragment.equals("product-list") ){
+                getFragmentManager().beginTransaction().
+                        replace(R.id.mainFragment, new ProductkFragment())
+                        .addToBackStack(null).commit();
+    }
+            }
 }
+

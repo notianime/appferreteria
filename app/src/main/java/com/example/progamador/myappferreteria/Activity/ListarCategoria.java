@@ -13,19 +13,19 @@ import java.util.ArrayList;
 
 import static android.R.layout.simple_list_item_1;
 
-public class ListarCategoria {
+public class ListarCategoria extends AppCompatActivity {
     ListView ListarCategoria;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_productos);
 
-        ListaProductos = (ListView) findViewById(R.id.lstvProductos);
-        ArrayList<String> items =   Product.getProductsAsString();
-
-        ArrayAdapter<String> itemsAdapter =
-                new ArrayAdapter<String>(this, simple_list_item_1, items);
-
-        ListarCategoria.setAdapter(itemsAdapter);
+//        ListaProductos = (ListView) findViewById(R.id.lstvProductos);
+//        ArrayList<String> items =   Product.getProductsAsString();
+//
+//        ArrayAdapter<String> itemsAdapter =
+//                new ArrayAdapter<String>(this, simple_list_item_1, items);
+//
+//        ListarCategoria.setAdapter(itemsAdapter);
     }
 }
