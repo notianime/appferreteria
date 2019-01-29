@@ -3,12 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/item1"
+        android:id="@+id/iteme1"
         android:title="@string/itemE1" />
     <item
-        android:id="@+id/item2"
+        android:id="@+id/iteme2"
         android:title="@string/itemE2" />
     <item
-        android:id="@+id/item3"
+        android:id="@+id/iteme3"
         android:title="@string/itemE3" />
 </menu>

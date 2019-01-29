@@ -4,9 +4,12 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import com.example.cabina10.latinoapp.activities.RegisterForm;
 import com.example.cabina10.latinoapp.adapters.StudentAdapter;
 import com.example.cabina10.latinoapp.models.Student;
 import java.util.ArrayList;
@@ -51,5 +54,23 @@ public class StudentsList extends AppCompatActivity {
     public void Siguiente(View view){
         Intent siguiente = new Intent(this, StudentDetails.class);
         startActivity(siguiente);
+    }
+
+    //Metodo para crear funciones a las opciones.
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id = item.getItemId();
+        if (id == R.id.itema1){
+            Intent siguiente = new Intent(this, Login.class);
+            startActivity(siguiente);
+        }else if (id == R.id.itema2){
+            Intent siguiente = new Intent(this, RegisterForm.class);
+            startActivity(siguiente);
+        }else if (id == R.id.itema3){
+            Intent siguiente = new Intent(this, RegisterForm.class);
+            startActivity(siguiente);
+        }else if (id == R.id.itema4){
+            finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

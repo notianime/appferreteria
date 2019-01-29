@@ -47,7 +47,7 @@ Login extends AppCompatActivity {
         }else
         if (!nombre.equals("") && nombre.equals("Aldair")){
             Toast.makeText(this, "Hola " + nombre, Toast.LENGTH_SHORT).show();
-            Intent siguiente = new Intent(this, StudentAccount.class);
+            Intent siguiente = new Intent(this, StudentDetails.class);
             siguiente.putExtra("Estudiante", nombre);
             startActivity(siguiente);
             finish();
