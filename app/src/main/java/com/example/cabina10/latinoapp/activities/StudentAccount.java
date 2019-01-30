@@ -1,8 +1,10 @@
-package com.example.cabina10.latinoapp;
+package com.example.cabina10.latinoapp.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+
+import com.example.cabina10.latinoapp.R;
 
 public class StudentAccount extends AppCompatActivity {
 

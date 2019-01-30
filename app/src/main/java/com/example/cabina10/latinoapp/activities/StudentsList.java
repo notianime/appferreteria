@@ -1,4 +1,4 @@
-package com.example.cabina10.latinoapp;
+package com.example.cabina10.latinoapp.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +9,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.cabina10.latinoapp.R;
+import com.example.cabina10.latinoapp.activities.Login;
 import com.example.cabina10.latinoapp.activities.RegisterForm;
+import com.example.cabina10.latinoapp.activities.StudentDetails;
 import com.example.cabina10.latinoapp.adapters.StudentAdapter;
 import com.example.cabina10.latinoapp.models.Student;
 import java.util.ArrayList;
