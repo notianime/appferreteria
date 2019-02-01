@@ -22,11 +22,10 @@
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="@string/usuario"
         android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
-        android:layout_marginTop="40dp"
-        />
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/editText4"
@@ -94,7 +93,7 @@
     <Button
         android:id="@+id/button3"
         android:layout_width="165dp"
-        android:layout_height="wrap_content"
+        android:layout_height="62dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:background="@color/colorPrimaryDark"

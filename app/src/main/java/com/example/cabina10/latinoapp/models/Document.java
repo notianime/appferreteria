@@ -31,12 +31,12 @@ public class Document {
 
     public static ArrayList<Document> getDocuments() {
         ArrayList<Document> _list = new ArrayList<>();
-        _list.add(new Document(1, "Exame", "El exame", new Date(2016,12,12), "http://precadete.cima.com.pe/documentos/suboficiales/prospecto/PROSPECTO2017II.pdf"));
-        _list.add(new Document(1, "Exame", "El exame", new Date(2016,12,12), "http://precadete.cima.com.pe/documentos/suboficiales/prospecto/PROSPECTO2017II.pdf"));
-        _list.add(new Document(1, "Exame", "El exame", new Date(2016,12,12), "http://precadete.cima.com.pe/documentos/suboficiales/prospecto/PROSPECTO2017II.pdf"));
-        _list.add(new Document(1, "Exame", "El exame", new Date(2016,12,12), "http://precadete.cima.com.pe/documentos/suboficiales/prospecto/PROSPECTO2017II.pdf"));
-        _list.add(new Document(1, "Exame", "El exame", new Date(2016,12,12), "http://precadete.cima.com.pe/documentos/suboficiales/prospecto/PROSPECTO2017II.pdf"));
-        _list.add(new Document(1, "Exame", "El exame", new Date(2016,12,12), "http://precadete.cima.com.pe/documentos/suboficiales/prospecto/PROSPECTO2017II.pdf"));
+        _list.add(new Document(1, "Producto1", "El producto", new Date(2019,01,01), "https://issuu.com/promarthomecenter/docs/lima_-_encarte_especial_pisos_-_ene?e=11452420/66819146"));
+        _list.add(new Document(1, "Producto2", "El producto", new Date(2019,12,12), "https://issuu.com/promarthomecenter/docs/lima_-_encarte_especial_pisos_-_ene?e=11452420/66819146"));
+        _list.add(new Document(1, "Producto3", "El producto", new Date(2019,12,12), "https://issuu.com/promarthomecenter/docs/lima_-_encarte_especial_pisos_-_ene?e=11452420/66819146"));
+        _list.add(new Document(1, "Producto4", "El producto", new Date(2019,12,12), "https://issuu.com/promarthomecenter/docs/lima_-_encarte_especial_pisos_-_ene?e=11452420/66819146"));
+        _list.add(new Document(1, "Producto5", "El producto", new Date(2019,12,12), "https://issuu.com/promarthomecenter/docs/lima_-_encarte_especial_pisos_-_ene?e=11452420/66819146"));
+        _list.add(new Document(1, "Producto6", "El producto", new Date(2019,12,12), "https://issuu.com/promarthomecenter/docs/lima_-_encarte_especial_pisos_-_ene?e=11452420/66819146"));
         return _list;
     }
 

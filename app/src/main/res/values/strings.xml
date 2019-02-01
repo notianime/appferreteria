@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Academia Latino Pre Policial</string>
+    <string name="app_name">Ferreteria Pool</string>
     //MENU
     <string name="item1">INGRESAR</string>
     <string name="item2">REGISTRAR</string>
@@ -13,7 +13,7 @@
     <string name="ImgLogin">IMG</string>
 
     //PDF
-    <string name="mainTitle">PRUEBAS DE ADMISIÓN</string>
+    <string name="mainTitle">Productos</string>
     <string name="mainPnp18">PNP Pilcomayo 2018 I</string>
     <string name="mainPnp17i">PNP Pilcomayo 2017 II</string>
     <string name="mainEO17">Escuela de Oficiales 2017</string>
@@ -23,15 +23,15 @@
     <string name="pdf">PDF</string>
 
     //ListaDeEstudiantes
-    <string name="titlels">Lista de Estudiantes</string>
+    <string name="titlels">Lista de Clientes</string>
     <string name="estudiante">Datos Personales</string>
 
     //Formulario de Registro
-    <string name="titleRegisterForm">FORMULARIO DE REGISTRO</string>
+    <string name="titleRegisterForm">NUEVO CLIENTE</string>
     <string name="email">Ingrese su Correo Electronico:</string>
     <string name="telefono">Ingrese su Telefono :</string>
     <string name="usuario">Ingrese un Nombre de Usuario :</string>
-    <string name="password">Ingrese una Contraseña Segura :</string>
+    <string name="password">Ingrese una Contraseña:</string>
     <string name="botonRegistrar">REGISTRAR</string>
 
     //MENU ESTUDIANTES
@@ -41,7 +41,14 @@
 
     //MENU ADMINISTRADOR
     <string name="itemA1">DATOS PERSONALES</string>
-    <string name="itemA2">ESTUDIANTES</string>
+    <string name="itemA2">CLIENTE</string>
     <string name="itemA3">ASISTENCIA</string>
     <string name="itemA4">SALIR</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
+        AIzaSyBjT8DamHvea_7XSm3rAND8uJ_Q8CWbNrg
+    </string>
 </resources>

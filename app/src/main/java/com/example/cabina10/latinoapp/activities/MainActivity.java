@@ -12,6 +12,7 @@ import android.widget.ListView;
 
 import com.example.cabina10.latinoapp.R;
 import com.example.cabina10.latinoapp.adapters.DocumentAdapter;
+import com.example.cabina10.latinoapp.fragments.MapFragments;
 import com.example.cabina10.latinoapp.models.Document;
 
 import java.util.ArrayList;
@@ -60,7 +61,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(siguiente);
         }else if (id == R.id.item3){
             finish();
-        }
+        }//else if (_fragment.equals("maps")){
+           // getFragmentManager().beginTransaction().replace((R.id.mainFragment,MapFragments()).addToBackStack())
+        //}
         return super.onOptionsItemSelected(item);
     }
 }

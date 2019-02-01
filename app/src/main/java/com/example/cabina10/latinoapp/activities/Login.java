@@ -46,17 +46,17 @@ Login extends AppCompatActivity {
             InputMethodManager inm = (InputMethodManager)getSystemService(this.INPUT_METHOD_SERVICE);
             inm.showSoftInput(etp, InputMethodManager.SHOW_IMPLICIT);
         }else
-        if (!nombre.equals("") && nombre.equals("Aldair")){
+        if (!nombre.equals("") && nombre.equals("Yoel")){
             Toast.makeText(this, "Hola " + nombre, Toast.LENGTH_SHORT).show();
             Intent siguiente = new Intent(this, StudentDetails.class);
-            siguiente.putExtra("Estudiante", nombre);
+            siguiente.putExtra("Cliente", nombre);
             startActivity(siguiente);
             finish();
         }else
-        if (!nombre.equals("") && nombre.equals("Carlos")){
-            Toast.makeText(this, "Hola " + nombre, Toast.LENGTH_SHORT).show();
+        if (!nombre.equals("") && nombre.equals("Rachel")){
+            Toast.makeText(this, "yoel" + nombre, Toast.LENGTH_SHORT).show();
             Intent siguiente = new Intent(this, StudentsList.class);
-            siguiente.putExtra("Estudiante", nombre);
+            siguiente.putExtra("Cliente", nombre);
             startActivity(siguiente);
             finish();
         }
